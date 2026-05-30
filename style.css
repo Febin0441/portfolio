@@ -78,7 +78,22 @@ display:flex;
 align-items:center;
 gap:15px;
 }
+.resume-btn{
+    text-decoration:none;
+    color:white;
+    background:#07efc9;
+    padding:10px 18px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s ease;
+}
 
+.resume-btn:hover{
+    background:#05c9aa;
+    color:#0f172a;
+    transform:translateY(-2px);
+}
 /* HAMBURGER */
 
 .hamburger{
