@@ -866,7 +866,34 @@ body.dark .project-back .role {
 body.dark .project-front .tech {
     color: #cbd5f5;
 }
+/* Scroll to Top Button */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
 
+#scrollTopBtn:hover {
+    background: #0056b3;
+    transform: translateY(-5px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 
 
