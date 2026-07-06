@@ -351,7 +351,7 @@ padding:40px;
 }
 
 .hero-text {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .hero-img img {
@@ -723,6 +723,7 @@ body.dark #clOutput {
     text-align:center;
     box-shadow:0 20px 40px rgba(0,0,0,0.12);
     transition:.4s ease;
+    
 }
 /* Instagram (4th card) */
 .contact-card:nth-child(4){
@@ -733,7 +734,6 @@ body.dark #clOutput {
 .contact-card:nth-child(5){
     grid-column:4 / span 2;
 }
-
 .contact-card:hover {
     transform: translateY(-10px);
 }
@@ -972,6 +972,7 @@ body.dark .project-front .tech {
 html {
     scroll-behavior: smooth;
 }
+
 @media (max-width:768px){
 
     .contact-wrapper{
@@ -985,4 +986,3 @@ html {
     }
 
 }
-
