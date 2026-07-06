@@ -524,14 +524,16 @@ const navMenu = document.getElementById("nav-menu");
 
 /* open / close menu */
 hamburger.addEventListener("click", (e) => {
+    hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-    e.stopPropagation(); 
+    e.stopPropagation();
 });
 
 /* close menu when clicking anywhere */
 document.addEventListener("click", (e) => {
     if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-        navMenu.classList.remove("active");
+       navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
     }
 });
 </script>
