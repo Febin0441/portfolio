@@ -537,6 +537,24 @@ document.addEventListener("click", (e) => {
     }
 });
 </script>
+    <script>
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 300) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+};
+
+scrollBtn.onclick = function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
