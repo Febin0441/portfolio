@@ -89,7 +89,34 @@ body.dark{
     --resume-bg:rgba(255,255,255,0.08);
     --resume-border:rgba(255,255,255,0.12);
 }
+.audio-btn{
+    background: transparent;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 6px;
+    padding: 2px;
+    vertical-align: middle;
+    transition: all .25s ease;
+}
 
+.audio-btn:hover{
+    color: #1d4ed8;
+    transform: scale(1.1);
+}
+
+.audio-btn:active{
+    transform: scale(.95);
+}
+
+body.dark .audio-btn{
+    color:#60a5fa;
+}
+
+body.dark .audio-btn:hover{
+    color:#93c5fd;
+}
 .resume-btn{
     display:flex;
     align-items:center;
