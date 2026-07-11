@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <meta charset="UTF-8">
-    <title>Febin Sabu Varghese | Web Developer</title>
-   <link rel="stylesheet" href="style.css?v=2026">
+    <title>Febin Sabu Varghese | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
    
 </head>
 
@@ -49,24 +49,22 @@
 
 
 <section id="home" class="hero">
-   <div class="hero-container">
+    <div class="hero-container">
 
-    <div class="hero-img">
-        <img src="Photograph.jpg" alt="Febin Sabu Varghese">
+        <div class="hero-text">
+           <h1>Hi, I'm <span class="glow-name">Febin Sabu Varghese</span></h1>
+            <p>UI Designer | Web Developer | AWS Cloud Enthusiast</p>
+            <p>Building responsive websites | intuitive user interfaces.</p>
+           
+            <a href="cvfinal.pdf"  class="btn"><strong>View my resume</strong></a>
+            
+        </div>
+
+        <div class="hero-img">
+            <img src="Photograph.jpg" alt="Febin Sabu Varghese">
+        </div>
+
     </div>
-
-    <div class="hero-text">
-        <h1>Hi, I'm <span class="glow-name">Febin Sabu Varghese</span></h1>
-       
-        <p>UI Designer | Web Developer | AWS Cloud Enthusiast</p>
-        <p>Building responsive websites | intuitive user interfaces.</p>
-
-        <a href="cvfinal.pdf" class="btn">
-            <strong>View my resume</strong>
-        </a>
-    </div>
-
-</div>
 </section>
 
 
@@ -303,24 +301,7 @@ design thinking, technical expertise, and problem-solving skills in real-world p
                 View Certificate
             </a>
         </div>
-<div class="cert-card">
-    <i class="fa-brands fa-python"></i>
-    <h3>Python Django Project Certificate</h3>
 
-    <p class="year">2024</p>
-    <p>LCC Computer Education</p>
-
-    <div class="skill-map">
-        <span>Python</span>
-        <span>Django</span>
-        <span>Web Development</span>
-        <span>SQLite</span>
-    </div>
-
-    <a href="django.pdf" target="_blank" class="cert-btn">
-        View Certificate
-    </a>
-</div>
     </div>
 
     <!-- ATS KEYWORDS (Hidden but Safe) -->
@@ -484,12 +465,12 @@ design thinking, technical expertise, and problem-solving skills in real-world p
     <i class="fa-brands fa-instagram"></i>
     <h3>Instagram</h3>
     <p>
-        <a href="https://instagram.com/febin_s_v" target="_blank">
-            @febin_s_v
+        <a href="https://instagram.com/your_username" target="_blank">
+            @your_username
         </a>
     </p>
 </div>
-        <div class="contact-card">
+<div class="contact-card">
     <i class="fa-solid fa-location-dot"></i>
     <h3>Location</h3>
     <p>
@@ -551,46 +532,11 @@ hamburger.addEventListener("click", (e) => {
 /* close menu when clicking anywhere */
 document.addEventListener("click", (e) => {
     if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
-       navMenu.classList.remove("active");
+        navMenu.classList.remove("active");
         hamburger.classList.remove("active");
     }
 });
 </script>
-    <script>
-const scrollTopBtn = document.getElementById("scrollTopBtn");
-
-// Show button after scrolling down
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        scrollTopBtn.style.display = "block";
-    } else {
-        scrollTopBtn.style.display = "none";
-    }
-});
-
-// Scroll to top
-scrollTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-document.getElementById("speakName").addEventListener("click", function () {
-
-    const speech = new SpeechSynthesisUtterance("Hi, I'm Febin Sabu Varghese");
-
-    speech.rate = 0.9;
-    speech.pitch = 1;
-    speech.lang = "en-IN";
-
-    speechSynthesis.cancel();
-    speechSynthesis.speak(speech);
-});
-</script>
 </body>
 </html>
-
