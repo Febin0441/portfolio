@@ -380,39 +380,43 @@ padding:40px;
 
     .hero-container{
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         align-items:center;
-        justify-content:center;
-        gap:25px;
-        text-align:center;
+        justify-content:space-between;
+        flex-wrap:nowrap;
+        gap:20px;
     }
 
     .hero-text{
-        order:2;
-        max-width:100%;
-    }
-
-    .hero-img{
+        width:60%;
+        text-align:left;
         order:1;
     }
 
+    .hero-img{
+        width:40%;
+        order:2;
+        display:flex;
+        justify-content:center;
+    }
+
     .hero-img img{
-        width:180px;
-        height:180px;
+        width:140px;
+        height:140px;
     }
 
     .hero h1{
-        font-size:32px;
+        font-size:26px;
         line-height:1.2;
     }
 
     .hero p{
-        font-size:15px;
+        font-size:14px;
     }
 
     .hero .btn{
-        padding:10px 22px;
-        font-size:15px;
+        padding:10px 18px;
+        font-size:14px;
     }
 }
 
@@ -848,36 +852,32 @@ body.dark #about p {
 /* =====================
    RESPONSIVE
 ===================== */
-@media (max-width: 900px) {
-    .hamburger {
-        display: flex;
+@media (max-width:900px){
+
+    .hamburger{
+        display:flex;
     }
 
-    .nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(15,23,42,0.98);
-        flex-direction: column;
-        gap: 18px;
-        padding: 25px 0;
-        display: none;
+    .nav-menu{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:rgba(15,23,42,.98);
+        flex-direction:column;
+        gap:18px;
+        padding:25px 0;
+        display:none;
     }
 
-    .nav-menu.active {
-        display: flex;
+    .nav-menu.active{
+        display:flex;
     }
 
-    section {
-        padding: 60px 30px;
+    section{
+        padding:60px 30px;
     }
 
-    .hero-container {
-        flex-direction: column-reverse;
-        text-align: center;
-        gap: 40px;
-    }
 }
 
 @media (max-width: 480px) {
