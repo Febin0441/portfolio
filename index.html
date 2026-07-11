@@ -580,7 +580,19 @@ scrollTopBtn.addEventListener("click", () => {
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+document.getElementById("speakName").addEventListener("click", function () {
 
+    const speech = new SpeechSynthesisUtterance("Febin Sabu Varghese");
+
+    speech.rate = 0.9;
+    speech.pitch = 1;
+    speech.lang = "en-IN";
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(speech);
+});
+</script>
 </body>
 </html>
 
