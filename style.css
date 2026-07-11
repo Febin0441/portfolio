@@ -855,7 +855,7 @@ body.dark #about p {
 
    .nav-menu{
     position:fixed;
-    top:83px;
+    top:100%;
     right:40px;
 
     width:220px;
@@ -879,7 +879,22 @@ body.dark #about p {
 .nav-menu.active{
     display:flex;
 }
+.nav-menu::before{
+    content:"";
+    position:absolute;
+    top:-8px;
+    right:18px;
 
+    width:16px;
+    height:16px;
+
+    background:rgba(15,23,42,.96);
+
+    transform:rotate(45deg);
+
+    border-left:1px solid rgba(255,255,255,.08);
+    border-top:1px solid rgba(255,255,255,.08);
+}
     section {
         padding: 60px 30px;
     }
