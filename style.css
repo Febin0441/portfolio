@@ -853,26 +853,49 @@ body.dark #about p {
         display: flex;
     }
 
-    .nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(15,23,42,0.98);
-        flex-direction: column;
-        gap: 18px;
-        padding: 25px 0;
-        display: none;
-    }
+   .nav-menu{
+    position:fixed;
+    top:75px;
+    right:15px;
 
-    .nav-menu.active {
-        display: flex;
-    }
+    width:220px;
+    max-height:75vh;
+    overflow-y:auto;
+
+    background:rgba(15,23,42,.96);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    padding:12px 0;
+
+    display:none;
+    flex-direction:column;
+
+    z-index:9999;
+}
+
+.nav-menu.active{
+    display:flex;
+}
 
     section {
         padding: 60px 30px;
     }
+.nav-menu li{
+    width:100%;
+}
 
+.nav-menu li a{
+    display:block;
+    padding:12px 20px;
+    font-size:15px;
+}
+
+.resume-btn{
+    display:none;
+}
     
 }
 
