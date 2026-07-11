@@ -855,8 +855,8 @@ body.dark #about p {
 
    .nav-menu{
     position:fixed;
-    top:62px;
-    right:8px;
+    top:83px;
+    right:40px;
 
     width:220px;
     max-height:75vh;
