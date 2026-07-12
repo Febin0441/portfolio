@@ -90,6 +90,7 @@ align-items:center;
 display:flex;
 align-items:center;
 gap:15px;
+    position:relative;
 }
 :root{
     --resume-text:#0f172a;
@@ -869,12 +870,10 @@ body.dark #about p {
         display: flex;
     }
 
-   .nav-menu{
+ .nav-menu{
     position:absolute;
-    top:100%;
-    right:25px;
-    left:auto;
-
+    top:calc(100% + 10px);
+    right:0;
     width:170px;
 
     background:rgba(15,23,42,.98);
@@ -895,11 +894,11 @@ body.dark #about p {
     content:"";
     position:absolute;
     top:-8px;
-    right:18px;
+    right:24px;
     width:16px;
     height:16px;
     background:rgba(15,23,42,.98);
-    transform:rotate(45deg);
+    transform:translateX(50%) rotate(45deg);
     border-left:1px solid rgba(255,255,255,.08);
     border-top:1px solid rgba(255,255,255,.08);
 }
