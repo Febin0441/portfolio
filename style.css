@@ -873,7 +873,7 @@ body.dark #about p {
  .nav-menu{
     position:absolute;
     top:calc(100% + 10px);
-    right:0;
+    right:25px;
     width:170px;
 
     background:rgba(15,23,42,.98);
@@ -894,7 +894,7 @@ body.dark #about p {
     content:"";
     position:absolute;
     top:-8px;
-    right:24px;
+    right:22px;
     width:16px;
     height:16px;
     background:rgba(15,23,42,.98);
