@@ -875,15 +875,15 @@ body.dark #about p {
     right:15px;
     left:auto;
 
-    width:190px;
+    width:150px;
 
     background:rgba(15,23,42,.98);
     backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,.08);
-    border-radius:14px;
+    border-radius:12px;
 
-    padding:8px 0;
+    padding:7px 0;
 
     display:none;
     flex-direction:column;
