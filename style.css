@@ -869,21 +869,53 @@ body.dark #about p {
         display: flex;
     }
 
-    .nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: rgba(15,23,42,0.98);
-        flex-direction: column;
-        gap: 18px;
-        padding: 25px 0;
-        display: none;
-    }
+   .nav-menu{
+    position:absolute;
+    top:100%;
+    right:15px;
+    left:auto;
 
-    .nav-menu.active {
-        display: flex;
-    }
+    width:190px;
+
+    background:rgba(15,23,42,.98);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+
+    padding:8px 0;
+
+    display:none;
+    flex-direction:column;
+    gap:4px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.35);
+}
+.nav-menu::before{
+    content:"";
+    position:absolute;
+    top:-8px;
+    right:18px;
+    width:16px;
+    height:16px;
+    background:rgba(15,23,42,.98);
+    transform:rotate(45deg);
+    border-left:1px solid rgba(255,255,255,.08);
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.nav-menu li{
+    width:100%;
+}
+
+.nav-menu li a{
+    display:block;
+    padding:10px 18px;
+    font-size:14px;
+}
+.nav-menu.active{
+    display:flex;
+}
 
     section {
         padding: 60px 30px;
