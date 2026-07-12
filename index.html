@@ -11,7 +11,55 @@
 
 
 <body>
+<div id="loader">
 
+    <div class="loader-card">
+
+        <div class="loader-logo">
+            FSV
+        </div>
+
+        <div class="loader-title">
+            Initializing Portfolio...
+        </div>
+
+        <div class="loader-steps">
+
+            <div class="step">
+                <span class="tick">✔</span>
+                Loading UI Components
+            </div>
+
+            <div class="step">
+                <span class="tick">✔</span>
+                Connecting AWS Services
+            </div>
+
+            <div class="step">
+                <span class="tick">✔</span>
+                Compiling Projects
+            </div>
+
+            <div class="step">
+                <span class="tick">✔</span>
+                Optimizing Experience
+            </div>
+
+        </div>
+
+        <div class="progress">
+
+            <div class="progress-bar"></div>
+
+        </div>
+
+        <p class="loader-footer">
+            Preparing your experience...
+        </p>
+
+    </div>
+
+</div>
 <nav class="navbar">
     <div class="nav-left">
         <h2 class="logo">PORTFOLIO</h2>
@@ -554,6 +602,20 @@ scrollBtn.onclick = function () {
         behavior: "smooth"
     });
 };
+</script>
+    <script>
+
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        document.getElementById("loader")
+        .classList.add("hide");
+
+    },2800);
+
+});
+
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
