@@ -872,8 +872,8 @@ body.dark #about p {
 
  .nav-menu{
     position:absolute;
-    top:calc(100% + 10px);
-    right:25px;
+    top:100%;
+    right:22px;
     width:170px;
 
     background:rgba(15,23,42,.98);
