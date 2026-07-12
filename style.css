@@ -66,11 +66,24 @@ align-items:center;
 }
 
 .logo{
-color:#07efc9;
-font-size:22px;
-font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:700;
+    color:#60a5fa;
 }
 
+.logo img{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+    transition:.35s ease;
+}
+
+.logo img:hover{
+    transform:rotate(15deg) scale(1.1);
+}
 /* RIGHT GROUP */
 
 .nav-right{
@@ -788,7 +801,10 @@ footer {
     text-align: center;
     padding: 18px;
 }
-
+.footer-logo{
+    width:60px;
+    margin-bottom:12px;
+}
 /* =====================
    DARK MODE
 ===================== */
@@ -853,64 +869,26 @@ body.dark #about p {
         display: flex;
     }
 
-   .nav-menu{
-    position:fixed;
-    top:100%;
-    right:40px;
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(15,23,42,0.98);
+        flex-direction: column;
+        gap: 18px;
+        padding: 25px 0;
+        display: none;
+    }
 
-    width:220px;
-    max-height:75vh;
-    overflow-y:auto;
+    .nav-menu.active {
+        display: flex;
+    }
 
-    background:rgba(15,23,42,.96);
-    backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
-
-    padding:12px 0;
-
-    display:none;
-    flex-direction:column;
-
-    z-index:9999;
-}
-
-.nav-menu.active{
-    display:flex;
-}
-.nav-menu::before{
-    content:"";
-    position:absolute;
-    top:-8px;
-    right:18px;
-
-    width:16px;
-    height:16px;
-
-    background:rgba(15,23,42,.96);
-
-    transform:rotate(45deg);
-
-    border-left:1px solid rgba(255,255,255,.08);
-    border-top:1px solid rgba(255,255,255,.08);
-}
     section {
         padding: 60px 30px;
     }
-.nav-menu li{
-    width:100%;
-}
 
-.nav-menu li a{
-    display:block;
-    padding:12px 20px;
-    font-size:15px;
-}
-
-.resume-btn{
-    display:none;
-}
     
 }
 
@@ -1031,23 +1009,18 @@ body.dark .project-front .tech {
 }
 
 .loader-logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
 
-    font-size:52px;
-
-    font-weight:700;
-
-    text-align:center;
-
-    letter-spacing:5px;
-
-    background:linear-gradient(90deg,#2563eb,#9333ea);
-
-    -webkit-background-clip:text;
-
-    -webkit-text-fill-color:transparent;
-
-    margin-bottom:20px;
-
+.loader-logo img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    animation:logoSpin 2.5s ease-in-out infinite;
+    filter:drop-shadow(0 0 20px rgba(37,99,235,.35));
 }
 
 .loader-title{
@@ -1152,6 +1125,25 @@ body.dark .project-front .tech {
     }
 
 }
+@keyframes logoSpin{
+
+    0%{
+        transform:scale(.8) rotate(0deg);
+        opacity:.5;
+    }
+
+    50%{
+        transform:scale(1.05) rotate(180deg);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(.8) rotate(360deg);
+        opacity:.5;
+    }
+
+}
+/* Scroll to Top Button */
 /* Scroll to Top Button */
 #scrollTopBtn{
     position:fixed;
