@@ -875,7 +875,7 @@ body.dark #about p {
     right:15px;
     left:auto;
 
-    width:150px;
+    width:170px;
 
     background:rgba(15,23,42,.98);
     backdrop-filter:blur(20px);
@@ -883,7 +883,7 @@ body.dark #about p {
     border:1px solid rgba(255,255,255,.08);
     border-radius:12px;
 
-    padding:7px 0;
+    padding:8px 0;
 
     display:none;
     flex-direction:column;
