@@ -863,7 +863,11 @@ section h2::after {
 .edu-card:hover {
     transform: translateY(-8px);
 }
-
+.edu-card h3 i{
+    margin-right:10px;
+    color:#60a5fa;
+    font-size:24px;
+}
 .edu-year {
     display: inline-block;
     font-size: 14px;
