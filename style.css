@@ -581,7 +581,13 @@ Developer Environment
 
     animation:fillUi 3s forwards;
 }
+.excel{
+    animation:fillExcel 3.5s forwards;
+}
 
+.powerbi{
+    animation:fillPowerBI 4s forwards;
+}
 @keyframes fillPython{
 to{width:95%;}
 }
@@ -609,7 +615,13 @@ to{width:96%;}
     margin-top:45px;
 
 }
+@keyframes fillExcel{
+    to{width:90%;}
+}
 
+@keyframes fillPowerBI{
+    to{width:87%;}
+}
 .system-info div{
 
     background:#161b22;
